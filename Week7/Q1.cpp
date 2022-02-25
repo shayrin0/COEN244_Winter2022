@@ -53,7 +53,7 @@ public:
     
     void input()
     {
-        cout << "Enter the real and imaginary parts: "
+        cout << "Enter the real and imaginary parts: ";
         cin >> real;
         cin >> imag;
     }
@@ -73,7 +73,14 @@ public:
 
 int main()
 {
+    complex_number num1(2,3);
+    complex_number num2(9,4);
+    complex_number num3;
     
+    num3 = num1 + num2;
+    
+    cout << "real part = " << num3.get_real() 
+         << "\nimaginary part = " << num3.get_imag() << endl;
     
     return 0;
 }
